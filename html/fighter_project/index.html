@@ -6,28 +6,138 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="mainPage">
-        <div class="title">
-            <h1>UFC vs BOXING</h1>
-            <p>이 페이지에선 역사에 남을 전설적인 파이터들을 만나보실 수 있습니다.</p>
-            <p id="downButton" onclick="clickMe()">명예의 전당 입장하기</p>
-        </div>
-    </div>
+    <header class="page1">
+        <nav class="title">
+            <h1>Who Will Win?</h1>
+            <p class="sub_title">Boxing vs UFC</p>
+            <p class="downButton" onclick="clickMe()">START COMBAT</p>
+        </nav>
+    </header>
 
-
-    <div class="page2">
-        <div class="image">
-                <div class="container" onclick="popup()">
-                    <img src="img/img01.webp" alt="image"/>
-                        <div class="caption">
+    <main class="page2">
+        <article>
+                <div class="container">
+                    <img class="myImg" src="img/img01.webp" alt="image"/>
+                        <div class="box">
                             <h2>Dmitry Bivol</h2>
                             <br>
                             <p>라이트 헤비급</p>
-                            <p>24전 23승(12KO) 1패</p>
+                            <p>24승(12KO) 0무 1패</p>
                         </div>
                 </div>
-                <div class="container"><img src="img/img02.webp" alt="image"/></div>
-        </div>
+                <div class="container">
+                    <img class="myImg" src="img/img02.webp" alt="image"/>
+                        <div class="box">
+                            <h2>Oleksandr Usyk</h2>
+                            <br>
+                            <p>크루저급, 헤비급</p>
+                            <p>23승(14KO) 0무 0패</p>
+                        </div>
+                </div>
+                <div class="container">
+                    <img class="myImg" src="img/img03.jpg" alt="image"/>
+                    <div class="box">
+                        <h2>Artur Beterbiev</h2>
+                        <br>
+                        <p>라이트 헤비급</p>
+                        <p>21승(20KO) 0무 1패</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="myImg" src="img/img04.webp" alt="image"/>
+                    <div class="box">
+                        <h2>Canelo Alvarez</h2>
+                        <br>
+                        <p>슈퍼 웰터, 미들, 슈퍼 미들, 라이트 헤비급</p>
+                        <p>62승(39KO) 2무 2패</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="myImg" src="img/img05.webp" alt="image"/>
+                    <div class="box">
+                        <h2>Gervonta Davis</h2>
+                        <br>
+                        <p>슈퍼페더, 라이트, 슈퍼라이트급</p>
+                        <p>30승(28KO) 0무 0패</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class="myImg" src="img/img06.jpg" alt="image"/>
+                    <div class="box">
+                        <h2> Naoya Inoue</h2>
+                        <br>
+                        <p>라이트 플라이, 슈퍼 플라이, 밴텀, 슈퍼 밴텀급</p>
+                        <p>29승(26KO) 0무 0패</p>
+                    </div>
+                </div>
+        </article>
+
+            <img class="spark_left" src="img/spark_left.png" alt="image"/>
+            <img class="versus" src="img/versus.webp" alt="image"/>
+            <img class="spark_right" src="img/spark_right.png" alt="image"/>
+
+
+        <section>
+            <div class="container">
+                <img class="myImg" src="img/img07.webp" alt="image"/>
+                <div class="box">
+                    <h2>Jon Jones</h2>
+                    <br>
+                    <p>라이트헤비, 헤비급</p>
+                    <p>28승 1패 1무효</p>
+                </div>
+            </div>
+            <div class="container">
+                <img class="myImg" src="img/img08.jpg" alt="image"/>
+                <div class="box">
+                    <h2>Alex Pereira</h2>
+                    <br>
+                    <p>라이트 헤비급</p>
+                    <p>12승 2패</p>
+                </div>
+            </div>
+            <div class="container">
+                <img class="myImg" src="img/img09.webp" alt="image"/>
+                <div class="box">
+                    <h2>Merab Dvalishvili</h2>
+                    <br>
+                    <p>밴텀급</p>
+                    <p>19승 4패</p>
+                </div>
+            </div>
+            <div class="container">
+                <img class="myImg" src="img/img10.webp" alt="image"/>
+                <div class="box">
+                    <h2>Ilia Topuria</h2>
+                    <br>
+                    <p>페더급</p>
+                    <p>15승 0패</p>
+                </div>
+            </div>
+            <div class="container">
+                <img class="myImg" src="img/img11.jpg" alt="image"/>
+                <div class="box">
+                    <h2>Max Holloway</h2>
+                    <br>
+                    <p>페더급, 라이트급</p>
+                    <p>26승 8패</p>
+                </div>
+            </div>
+            <div class="container">
+                <img class="myImg" src="img/img12.jpg" alt="image"/>
+                <div class="box">
+                    <h2>Islam Makhachev</h2>
+                    <br>
+                    <p>라이트급</p>
+                    <p>27승 1패</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img id="modal_content" class="modalImg">
     </div>
 
     <script src="externalScript.js"></script>
